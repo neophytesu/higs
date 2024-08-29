@@ -1,7 +1,8 @@
 package com.su.mapper;
 
-import com.su.model.domain.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.su.model.domain.User;
+import org.springframework.stereotype.Repository;
 
 /**
 * @author 86158
@@ -9,6 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2024-08-29 10:25:05
 * @Entity com.su.domain.User
 */
+@Repository
 public interface UserMapper extends BaseMapper<User> {
 
 }

@@ -1,7 +1,9 @@
 package com.su.service;
 
+import com.su.common.Response;
 import com.su.model.domain.Card;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.su.model.request.RegistRequest;
 
 /**
 * @author 86158
@@ -10,4 +12,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface CardService extends IService<Card> {
 
+    Response getCardStatus(int cardId);
+
+    void addCard(int cardId);
 }

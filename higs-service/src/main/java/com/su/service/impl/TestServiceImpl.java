@@ -2,7 +2,7 @@ package com.su.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.su.common.Response;
-import com.su.dao.TestMapper;
+import com.su.mapper.TestMapper;
 import com.su.model.domain.Test;
 import com.su.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;

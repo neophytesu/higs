@@ -9,10 +9,14 @@
             <result property="imageUrl" column="image_url" jdbcType="VARCHAR"/>
             <result property="username" column="username" jdbcType="VARCHAR"/>
             <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
+            <result property="identity" column="identity" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
         id,image_url,username,
-        password,face_feature
+        password,name,mobile,
+        identity,face_feature
     </sql>
 </mapper>

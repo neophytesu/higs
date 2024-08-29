@@ -1,7 +1,8 @@
 package com.su.service;
 
-import com.su.model.domain.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.su.model.request.RegistRequest;
+import com.su.model.domain.User;
 
 /**
 * @author 86158
@@ -10,4 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface UserService extends IService<User> {
 
+    void addUser(RegistRequest registRequest);
+
+    int getUserIdByMobile(String mobile);
 }

@@ -2,6 +2,7 @@ package com.su.mapper;
 
 import com.su.model.domain.Relation;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
 
 /**
 * @author 86158
@@ -9,6 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2024-08-29 10:25:02
 * @Entity com.su.domain.Relation
 */
+@Repository
 public interface RelationMapper extends BaseMapper<Relation> {
 
 }

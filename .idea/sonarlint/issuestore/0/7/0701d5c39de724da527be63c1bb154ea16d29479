@@ -1,0 +1,7 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8û”·ç™2J$7dfdaa2a-2218-4db2-b9b8-0f907c980b4c
+ 
+java:S1128"XRemove this unused import 'com.baomidou.mybatisplus.core.conditions.query.QueryWrapper'.(ÓÆÂæÿÿÿÿÿ8’Ï‹è™2J$989e779e-7c73-4e1a-8046-135b06be4df0
+‡
+java:S1128"?Remove this unused import 'com.su.model.request.RegistRequest'.(ôº‘šÿÿÿÿÿ8’Ï‹è™2J$b6310037-9d23-4d20-a044-463761acc34f

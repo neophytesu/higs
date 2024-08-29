@@ -8,7 +8,10 @@ create table user
     image_url    varchar(255) null,
     username     varchar(50)  null,
     password     varchar(50)  null,
-    face_feature longblob     null
+    face_feature longblob     null,
+    name         varchar(50)  null,
+    mobile      varchar(50)  null,
+    identity    varchar(50)  null
 ) ENGINE = InnoDB;
 /*医生表*/
 create table doctor

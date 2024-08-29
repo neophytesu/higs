@@ -1,4 +1,4 @@
-package com.su.dao;
+package com.su.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.su.model.domain.Test;

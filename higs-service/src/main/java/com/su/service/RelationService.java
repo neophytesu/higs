@@ -10,4 +10,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface RelationService extends IService<Relation> {
 
+    void addRelation(int userId, int phone,int cardId);
 }

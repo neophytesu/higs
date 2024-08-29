@@ -34,6 +34,7 @@
         <mybatis.version>3.0.3</mybatis.version>
         <mysql.version>8.4.0</mysql.version>
         <lang3.version>3.14.0</lang3.version>
+        <mybatis-generator.version>3.5.7</mybatis-generator.version>
     </properties>
     <dependencies>
         <dependency>
@@ -81,6 +82,11 @@
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
             <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>${mybatis-generator.version}</version>
         </dependency>
         <!-- commons-lang3 -->
         <dependency>

@@ -1,1 +1,0 @@
-<view class="{{('data-v-b1dd0357') + ' ' + b}}" style="{{'animation:' + c + ';' + ('height:' + '100%') + ';' + ('width:' + '100%')}}"><slot a:if="{{a}}"/></view>

@@ -1,0 +1,1 @@
+<view class="{{('data-v-b34f7f42') + ' ' + f}}" style="{{g}}"><view a:if="{{a}}" class="container data-v-b34f7f42" style="{{'height:' + d}}" catchTouchMove="{{e}}"><view class="cricle data-v-b34f7f42"></view><text a:if="{{b}}" class="text data-v-b34f7f42">{{c}}</text></view><slot/></view>

@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "就诊卡绑定",
+  "usingComponents": {
+    "iui-input": "../../components/iui-design/components/iui-input/iui-input",
+    "iui-button": "../../components/iui-design/components/iui-button/iui-button",
+    "iui-toast": "../../components/iui-design/components/iui-toast/iui-toast"
+  }
+}

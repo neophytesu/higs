@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "usingComponents": {
+    "iui-icon": "../iui-icon/iui-icon",
+    "iui-spin": "../iui-spin/iui-spin",
+    "iui-translation": "../iui-translation/iui-translation"
+  }
+}

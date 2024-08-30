@@ -1,0 +1,18 @@
+{
+    "id": "iui-design",
+    "name": "iui Design",
+    "displayName": "iui Design",
+    "version": "1.0.0-alpha.5",
+    "description": "iui Design 是一款基于 uni-app 的前端组件库，它提供了一套可复用、易扩展、低耦合的移动端 UI 组件库，帮助开发者快速搭建移动应用。",
+    "keywords": [
+        "vue3",
+        "组件库",
+        "UI"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

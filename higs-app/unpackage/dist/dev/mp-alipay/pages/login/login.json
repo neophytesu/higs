@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "登录",
+  "usingComponents": {
+    "phone": "./phone"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "就诊卡注册",
+  "usingComponents": {
+    "iui-divider": "../../components/iui-design/components/iui-divider/iui-divider",
+    "iui-input": "../../components/iui-design/components/iui-input/iui-input",
+    "iui-button": "../../components/iui-design/components/iui-button/iui-button"
+  }
+}

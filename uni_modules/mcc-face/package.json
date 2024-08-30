@@ -1,0 +1,83 @@
+{
+  "id": "mcc-face",
+  "displayName": "活体检测 人脸识别 不需要第三方sdk",
+  "version": "1.0.4",
+  "description": "活体检测 支持人脸识别 人脸获取检测返回人脸数据， 不需要第三方sdk 不需要重新编辑， 继续webview优化，真机运行，",
+  "keywords": [
+    "人脸识别",
+    "活体检测",
+    "人脸",
+    "识别"
+],
+  "repository": "",
+"engines": {
+  },
+  "dcloudext": {
+    "type": "sdk-js",
+    "sale": {
+      "regular": {
+        "price": "0.00"
+      },
+      "sourcecode": {
+        "price": "0.00"
+      }
+    },
+    "contact": {
+      "qq": ""
+    },
+    "declaration": {
+      "ads": "无",
+      "data": "无",
+      "permissions": " \"<uses-permission android:name=\\\"android.permission.CHANGE_NETWORK_STATE\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.READ_CONTACTS\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.VIBRATE\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.READ_LOGS\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.ACCESS_WIFI_STATE\\\"/>\",\n\t\t\t\t\t\"<uses-feature android:name=\\\"android.hardware.camera.autofocus\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.WRITE_CONTACTS\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.ACCESS_NETWORK_STATE\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.CAMERA\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.RECORD_AUDIO\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.GET_ACCOUNTS\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.MODIFY_AUDIO_SETTINGS\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.READ_PHONE_STATE\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.CHANGE_WIFI_STATE\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.WAKE_LOCK\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.CALL_PHONE\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.FLASHLIGHT\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.ACCESS_COARSE_LOCATION\\\"/>\",\n\t\t\t\t\t\"<uses-feature android:name=\\\"android.hardware.camera\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.ACCESS_FINE_LOCATION\\\"/>\",\n\t\t\t\t\t\"<uses-permission android:name=\\\"android.permission.WRITE_SETTINGS\\\"/>\""
+    },
+    "npmurl": ""
+  },
+  "uni_modules": {
+    "dependencies": [],
+    "encrypt": [],
+    "platforms": {
+      "cloud": {
+        "tcb": "y",
+        "aliyun": "y"
+      },
+      "client": {
+        "Vue": {
+          "vue2": "y",
+          "vue3": "y"
+        },
+        "App": {
+          "app-vue": "y",
+          "app-nvue": "y"
+        },
+        "H5-mobile": {
+          "Safari": "n",
+          "Android Browser": "n",
+          "微信浏览器(Android)": "n",
+          "QQ浏览器(Android)": "n"
+        },
+        "H5-pc": {
+          "Chrome": "n",
+          "IE": "n",
+          "Edge": "n",
+          "Firefox": "n",
+          "Safari": "n"
+        },
+        "小程序": {
+          "微信": "n",
+          "阿里": "n",
+          "百度": "n",
+          "字节跳动": "n",
+          "QQ": "n",
+          "钉钉": "n",
+          "快手": "n",
+          "飞书": "n",
+          "京东": "n"
+        },
+        "快应用": {
+          "华为": "n",
+          "联盟": "n"
+        }
+      }
+    }
+  }
+}

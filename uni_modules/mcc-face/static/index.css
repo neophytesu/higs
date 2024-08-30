@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#video{
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	transform: rotatey(180deg);
+}
+#hello{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background: #000;
+	text-align: center;
+	color: #fff;
+	z-index: 9;
+	top: 50px;
+}
+#hello.on{
+	background: red;
+}

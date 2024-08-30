@@ -1,0 +1,1 @@
+<view><camera id="camera" device-position="front"/><button onTap="{{a}}">take</button></view>

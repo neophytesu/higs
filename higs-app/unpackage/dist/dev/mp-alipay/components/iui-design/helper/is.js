@@ -9,6 +9,9 @@ function isString(obj) {
 function isNumber(obj) {
   return opt.call(obj) === "[object Number]";
 }
+function isBoolean(obj) {
+  return opt.call(obj) === "[object Boolean]";
+}
 function isNull(obj) {
   return opt.call(obj) === "[object Null]";
 }
@@ -28,8 +31,10 @@ function isEmpty(obj) {
   return false;
 }
 exports.isArray = isArray;
+exports.isBoolean = isBoolean;
 exports.isEmpty = isEmpty;
 exports.isNull = isNull;
 exports.isNumber = isNumber;
 exports.isObject = isObject;
 exports.isString = isString;
+exports.isUndefined = isUndefined;

@@ -20,8 +20,8 @@
 	<!-- 失败弹窗 -->
 	<iui-toast ref='toast-error' type="error" position="bottom" duration='2000'>就诊卡不存请前往注册</iui-toast>
 
-	test
-	<button @click="goBack"> goback </button>
+	<!-- test
+	<button @click="goBack"> goback </button> -->
 </template>
 
 <script>
@@ -99,12 +99,12 @@
 	    outline: none; /* 移除焦点时的默认轮廓 */  
 	}  
 	.p {  
-	    text-align: right; /* 这通常是<p align='right'>的CSS等价物，但更推荐使用CSS来设置 */  
-	    color: #333eee; /* 字体颜色 */  
-	    font-size: 15px; /* 字体大小 */  
-	    margin: 0; /* 移除默认的段落边距 */  
-	    padding: 5px 20px; /* 内边距，让文本不会紧贴边缘 */  
-	    /* 你可以根据需要添加更多样式 */  
+	    text-align: right;   
+	    color: #333eee;   
+	    font-size: 15px;   
+	    margin: 0;  
+	    padding: 5px 20px;   
+	      
 	}
 
 </style>

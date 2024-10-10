@@ -1,6 +1,8 @@
 {
   "defaultTitle": "登录",
   "usingComponents": {
-    "phone": "./phone"
+    "iui-divider": "../../components/iui-design/components/iui-divider/iui-divider",
+    "iui-button": "../../components/iui-design/components/iui-button/iui-button",
+    "iui-popup": "../../components/iui-design/components/iui-popup/iui-popup"
   }
 }

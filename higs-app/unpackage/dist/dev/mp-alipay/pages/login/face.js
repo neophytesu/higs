@@ -1,13 +1,48 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
+const common_assets = require("../../common/assets.js");
 const _sfc_main = {
+  data() {
+    return {
+      fil: true,
+      imgList: [""],
+      statusBar: "",
+      CustomBar: 0
+    };
+  },
   onLoad: function() {
     console.log("onLoad");
   },
   methods: {
+    back() {
+      common_vendor.index.reLaunch({
+        url: "/pages/index/index"
+      });
+    },
     takePhoto() {
       console.log("调用takePhoto");
-      const ctx = common_vendor.index.createCameraContext("camera", this);
+      common_vendor.index.showLoading({
+        title: "人脸识别中...",
+        // 显示的提示内容  
+        mask: true,
+        // 是否显示透明蒙层，防止触摸穿透  
+        success: function() {
+          console.log("加载提示显示成功");
+        },
+        fail: function(err) {
+          console.error("加载提示显示失败：", err);
+        },
+        complete: function() {
+          console.log("加载提示调用结束");
+          setTimeout(() => {
+            common_vendor.index.hideLoading();
+            common_vendor.index.reLaunch({
+              url: "/pages/index/index"
+            });
+          }, 3e3);
+        }
+      });
+      const ctx = common_vendor.index.createCameraContext("livePusher", this);
       ctx.takePhoto({
         quality: "high",
         // 照片的质量  
@@ -26,7 +61,9 @@ const _sfc_main = {
             },
             success: (uploadRes) => {
               console.log("uploadFile:success", uploadRes.data);
-              common_vendor.index.navigateBack();
+              common_vendor.index.reLaunch({
+                url: "/pages/index/index"
+              });
             },
             fail: (uploadErr) => {
               console.error("uploadFile:fail", uploadErr);
@@ -45,7 +82,14 @@ const _sfc_main = {
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.o((...args) => $options.takePhoto && $options.takePhoto(...args))
+    a: common_vendor.o((...args) => _ctx.BackPage && _ctx.BackPage(...args)),
+    b: common_vendor.s({
+      top: $data.statusBar + "px"
+    }),
+    c: $data.CustomBar + "px",
+    d: common_assets._imports_0,
+    e: common_vendor.o((...args) => $options.takePhoto && $options.takePhoto(...args)),
+    f: common_vendor.o((...args) => $options.back && $options.back(...args))
   };
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render]]);

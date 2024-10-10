@@ -1,4 +1,14 @@
 {
-  "defaultTitle": "uni-app",
-  "usingComponents": {}
+  "defaultTitle": "主页",
+  "usingComponents": {
+    "iui-button": "../../components/iui-design/components/iui-button/iui-button",
+    "iui-search": "../../components/iui-design/components/iui-search/iui-search",
+    "iui-icon": "../../components/iui-design/components/iui-icon/iui-icon",
+    "iui-grid-item": "../../components/iui-design/components/iui-grid-item/iui-grid-item",
+    "iui-grid-row": "../../components/iui-design/components/iui-grid-row/iui-grid-row",
+    "iui-grid": "../../components/iui-design/components/iui-grid/iui-grid",
+    "iui-card": "../../components/iui-design/components/iui-card/iui-card",
+    "iui-collapse": "../../components/iui-design/components/iui-collapse/iui-collapse",
+    "iui-divider": "../../components/iui-design/components/iui-divider/iui-divider"
+  }
 }

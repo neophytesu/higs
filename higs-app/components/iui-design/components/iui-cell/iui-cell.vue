@@ -1,6 +1,6 @@
 <template>
   <view :class="`${prefixCls}-wrapper`">
-    <cell
+    <view
       :class="cls"
       :style="{
         minHeight: getCellHeight(),
@@ -31,7 +31,7 @@
           <iui-icon name="right" v-if="showArrow"></iui-icon>
         </view>
       </view>
-    </cell>
+    </view>
   </view>
 </template>
 

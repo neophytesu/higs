@@ -7,9 +7,20 @@ if (!Math) {
   "./pages/login/carding.js";
   "./pages/login/card.js";
   "./pages/login/face.js";
+  "./pages/login/facing.js";
   "./pages/index/index.js";
+  "./pages/index/card.js";
+  "./pages/index/register.js";
+  "./pages/index/proregister.js";
+  "./pages/index/registerFee.js";
   "./pages/home/home.js";
+  "./pages/home/index.js";
+  "./pages/home/fee.js";
   "./pages/message/message.js";
+  "./pages/message/guide.js";
+  "./pages/message/ask.js";
+  "./pages/message/index.js";
+  "./pages/message/test.js";
 }
 const _sfc_main = {
   onLaunch: function() {

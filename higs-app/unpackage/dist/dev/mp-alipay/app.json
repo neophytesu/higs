@@ -4,14 +4,48 @@
     "pages/login/carding",
     "pages/login/card",
     "pages/login/face",
+    "pages/login/facing",
     "pages/index/index",
+    "pages/index/card",
+    "pages/index/register",
+    "pages/index/proregister",
+    "pages/index/registerFee",
     "pages/home/home",
-    "pages/message/message"
+    "pages/home/index",
+    "pages/home/fee",
+    "pages/message/message",
+    "pages/message/guide",
+    "pages/message/ask",
+    "pages/message/index",
+    "pages/message/test"
   ],
   "window": {
     "defaultTitle": "uni-app",
-    "titleBarColor": "#F8F8F8",
+    "titleBarColor": "white",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#C0000",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "主页",
+        "icon": "/static/tabbar/index.png",
+        "activeIcon": "/static/tabbar/index-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "name": "消息",
+        "icon": "/static/tabbar/message.png",
+        "activeIcon": "/static/tabbar/message-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "name": "用户",
+        "icon": "/static/tabbar/user.png",
+        "activeIcon": "/static/tabbar/user-active.png"
+      }
+    ]
   },
   "subPackageBuildType": "shared",
   "usingComponents": {}

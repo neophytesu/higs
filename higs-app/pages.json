@@ -25,23 +25,87 @@
 			}
 		},
 		{
-			"path": "pages/index/index",
+			"path": "pages/login/facing",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "人脸识别登录"
 			}
 		},
-
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "主页"
+			}
+		},
+		{
+			"path": "pages/index/card",
+			"style": {
+				"navigationBarTitleText": "主页"
+			}
+		},
+		{
+			"path": "pages/index/register",
+			"style": {
+				"navigationBarTitleText": "挂号"
+			}
+		},
+		{
+			"path": "pages/index/proregister",
+			"style": {
+				"navigationBarTitleText": "挂号须知"
+			}
+		},
+		{
+			"path": "pages/index/registerFee",
+			"style": {
+				"navigationBarTitleText": "挂号缴费"
+			}
+		},
 		{
 			"path": "pages/home/home",
 			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
 				"navigationBarTitleText": ""
 			}
 		},
-
+		{
+			"path": "pages/home/fee",
+			"style": {
+				"navigationBarTitleText": "缴费记录"
+			}
+		},
 		{
 			"path": "pages/message/message",
 			"style": {
-				"navigationBarTitleText": ""
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/message/guide",
+			"style": {
+				"navigationBarTitleText": "导诊"
+			}
+		},
+		{
+			"path": "pages/message/ask",
+			"style": {
+				"navigationBarTitleText": "预问诊"
+			}
+		},
+		{
+			"path": "pages/message/index",
+			"style": {
+				"navigationBarTitleText": "聊天"
+			}
+		},
+		{
+			"path": "pages/message/test",
+			"style": {
+				"navigationBarTitleText": "测试"
 			}
 		}
 	],
@@ -53,34 +117,33 @@
 		}
 	},
 
+	"tabBar": {
+		"selectedColor": "#C0000",	
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "主页",
+				"iconPath": "/static/tabbar/index.png",
+				"selectedIconPath": "/static/tabbar/index-active.png"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"text": "消息",
+				"iconPath": "/static/tabbar/message.png",
+				"selectedIconPath": "/static/tabbar/message-active.png"
 
-	// "tabBar": {
-	// 	"selectedColor": "#C0000",
-	// 	"list": [
-	// 		{
-	// 			"pagePath": "pages/index/index",
-	// 			"text": "xxx",
-	// 			"iconPath": "",
-	// 			"selectedIconPath": ""
-	// 		},
-	// 		{
-	// 			"pagePath": "",
-	// 			"text": "消息",
-	// 			"iconPath": "",
-	// 			"selectedIconPath": ""
-	// 		},
-	// 		{
-	// 			"pagePath": "",
-	// 			"text": "我的",
-	// 			"iconPath": "",
-	// 			"selectedIconPath": ""
-	// 		}
-	// 	]
-	// },
+			},
+			{
+				"pagePath": "pages/home/home",
+				"text": "用户",
+				"iconPath": "/static/tabbar/user.png",
+				"selectedIconPath": "/static/tabbar/user-active.png"
+			}
+		]
+	},
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "white",
 		"backgroundColor": "#F8F8F8"
 	},
 	"uniIdRouter": {}

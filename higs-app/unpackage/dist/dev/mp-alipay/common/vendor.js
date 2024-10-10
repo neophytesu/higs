@@ -7307,6 +7307,38 @@ function patchStopImmediatePropagation(e2, value) {
     return value;
   }
 }
+function vFor(source, renderItem) {
+  let ret;
+  if (isArray(source) || isString(source)) {
+    ret = new Array(source.length);
+    for (let i = 0, l = source.length; i < l; i++) {
+      ret[i] = renderItem(source[i], i, i);
+    }
+  } else if (typeof source === "number") {
+    if (!Number.isInteger(source)) {
+      warn(`The v-for range expect an integer value but got ${source}.`);
+      return [];
+    }
+    ret = new Array(source);
+    for (let i = 0; i < source; i++) {
+      ret[i] = renderItem(i + 1, i, i);
+    }
+  } else if (isObject$1(source)) {
+    if (source[Symbol.iterator]) {
+      ret = Array.from(source, (item, i) => renderItem(item, i, i));
+    } else {
+      const keys = Object.keys(source);
+      ret = new Array(keys.length);
+      for (let i = 0, l = keys.length; i < l; i++) {
+        const key = keys[i];
+        ret[i] = renderItem(source[key], key, i);
+      }
+    }
+  } else {
+    ret = [];
+  }
+  return ret;
+}
 function renderSlot(name, props = {}, key) {
   const instance = getCurrentInstance();
   const { parent, isMounted, ctx: { $scope } } = instance;
@@ -7352,6 +7384,7 @@ function stringify(styles) {
   return ret;
 }
 const o = (value, key) => vOn(value, key);
+const f = (source, renderItem) => vFor(source, renderItem);
 const r = (name, props, key) => renderSlot(name, props, key);
 const s = (value) => stringifyStyle(value);
 const e = (target, ...sources) => extend(target, ...sources);
@@ -8904,19 +8937,102 @@ Store.prototype._withCommit = function _withCommit(fn) {
   this._committing = committing;
 };
 Object.defineProperties(Store.prototype, prototypeAccessors);
+var mapMutations = normalizeNamespace(function(namespace, mutations) {
+  var res = {};
+  if (!isValidMap(mutations)) {
+    console.error("[vuex] mapMutations: mapper parameter must be either an Array or an Object");
+  }
+  normalizeMap(mutations).forEach(function(ref2) {
+    var key = ref2.key;
+    var val = ref2.val;
+    res[key] = function mappedMutation() {
+      var args = [], len = arguments.length;
+      while (len--)
+        args[len] = arguments[len];
+      var commit2 = this.$store.commit;
+      if (namespace) {
+        var module2 = getModuleByNamespace(this.$store, "mapMutations", namespace);
+        if (!module2) {
+          return;
+        }
+        commit2 = module2.context.commit;
+      }
+      return typeof val === "function" ? val.apply(this, [commit2].concat(args)) : commit2.apply(this.$store, [val].concat(args));
+    };
+  });
+  return res;
+});
+var mapGetters = normalizeNamespace(function(namespace, getters) {
+  var res = {};
+  if (!isValidMap(getters)) {
+    console.error("[vuex] mapGetters: mapper parameter must be either an Array or an Object");
+  }
+  normalizeMap(getters).forEach(function(ref2) {
+    var key = ref2.key;
+    var val = ref2.val;
+    val = namespace + val;
+    res[key] = function mappedGetter() {
+      if (namespace && !getModuleByNamespace(this.$store, "mapGetters", namespace)) {
+        return;
+      }
+      if (!(val in this.$store.getters)) {
+        console.error("[vuex] unknown getter: " + val);
+        return;
+      }
+      return this.$store.getters[val];
+    };
+    res[key].vuex = true;
+  });
+  return res;
+});
+function normalizeMap(map2) {
+  if (!isValidMap(map2)) {
+    return [];
+  }
+  return Array.isArray(map2) ? map2.map(function(key) {
+    return { key, val: key };
+  }) : Object.keys(map2).map(function(key) {
+    return { key, val: map2[key] };
+  });
+}
+function isValidMap(map2) {
+  return Array.isArray(map2) || isObject(map2);
+}
+function normalizeNamespace(fn) {
+  return function(namespace, map2) {
+    if (typeof namespace !== "string") {
+      map2 = namespace;
+      namespace = "";
+    } else if (namespace.charAt(namespace.length - 1) !== "/") {
+      namespace += "/";
+    }
+    return fn(namespace, map2);
+  };
+}
+function getModuleByNamespace(store, helper, namespace) {
+  var module2 = store._modulesNamespaceMap[namespace];
+  if (!module2) {
+    console.error("[vuex] module namespace not found in " + helper + "(): " + namespace);
+  }
+  return module2;
+}
 exports._export_sfc = _export_sfc;
 exports.computed = computed;
 exports.createSSRApp = createSSRApp;
 exports.createStore = createStore;
 exports.e = e;
+exports.f = f;
 exports.getCurrentInstance = getCurrentInstance;
 exports.index = index;
 exports.inject = inject;
+exports.mapGetters = mapGetters;
+exports.mapMutations = mapMutations;
 exports.n = n;
 exports.nextTick$1 = nextTick$1;
 exports.o = o;
 exports.onMounted = onMounted;
 exports.p = p;
+exports.provide = provide;
 exports.r = r;
 exports.ref = ref;
 exports.resolveComponent = resolveComponent;

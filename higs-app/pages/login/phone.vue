@@ -1,10 +1,20 @@
 <template>
+	
+	<!-- 登录框 -->
+	
 	<view class="login-container">
 		<view class="title">登录</view>
 		<view class="input-container">
 			<input type="number" class="input" placeholder="请输入手机号" v-model="phoneNumber" />
 		</view>
-		<iui-button type="primary" class="submit-btn" @click="submitLogin">提交</iui-button>
+		<view class="input-container">
+			<input type="number" class="input" placeholder="请输入密码" v-model="password" />
+		</view>
+		<view>
+			<p @click="toFacing" class='p'>人脸识别登录</p>
+		</view>
+		<iui-button  type="primary" class="submit-btn" @click="submitLogin">提交</iui-button>
+		
 	</view>
 
 	<!-- 选项框-就诊卡 -->
@@ -46,6 +56,7 @@
 		data() {
 			return {
 				phoneNumber: '', // 绑定手机号输入框
+				password: '',
 				cardTip: false,
 				faceTip: false,
 				popHeight: 150,
@@ -79,7 +90,6 @@
 
 				//2.绑定全局数据
 				this.$store.commit('SET_PHONE', this.phoneNumber);
-				//		 console.log(this.$store);
 
 				//3.发送api请求
 				getUser();
@@ -116,7 +126,6 @@
 					url: '/pages/login/face'
 				});
 				this.faceTip = 0;
-
 			},
 			toTabbar() {
 				if(this.cardState && this.faceState){
@@ -125,12 +134,18 @@
 					});
 				}
 			},
+			toFacing(){
+				uni.navigateTo({
+					url: '/pages/login/facing'
+				});
+			},
 			testHandler() {
 				this.cardTip = this.cardTip ? 0 : 1;
 			},
 			testHandler2() {
 				this.faceTip = this.faceTip ? 0 : 1;
 			}
+			
 		}
 	};
 </script>
@@ -167,6 +182,12 @@
 		border-radius: 5px;
 		font-size: 16px;
 	}
-
+	.p {  
+	    text-align: right;  
+	    color: #333eee; 
+	    font-size: 15px;   
+	    margin: 0; 
+	    padding: 5px 20px; 
+	}
 	
 </style>

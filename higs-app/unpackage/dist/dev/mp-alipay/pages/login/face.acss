@@ -1,0 +1,66 @@
+
+.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		/* 或指定高度 */
+}
+.camera {
+		width: 100%;
+		/* 或指定宽度 */
+		aspect-ratio: 16 / 9;
+		/* 保持相机视图的宽高比 */
+		margin-bottom: 20px;
+		/* 与按钮之间的间距 */
+}
+.btn {
+		padding: 10px 20px;
+		border-radius: 5px;
+		background-color: #409EFF;
+		/* 蓝色背景 */
+		color: white;
+		font-size: 16px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+		/* 平滑过渡效果 */
+}
+.btn:hover {
+		background-color: #66b1ff;
+		/* 鼠标悬停时的背景色 */
+}
+.btn-text {
+		/* 按钮内的文本样式 */
+}
+.custom{
+		background-color: #2C65F7;
+}
+.navcontent{
+		height: 45px;
+		display: -ms-flex;
+		display: flex;
+		justify-content:space-around;
+		flex-direction:row;
+		color:#FFFFFF;
+}
+.livePusher{
+		width: 350px;
+		height: 350px;
+}
+.livefater{
+		display: -ms-flex;
+		display: flex;
+		justify-content:center;
+		flex-direction:column;
+		align-items:center;
+		margin-top: 50rpx;
+		margin-bottom: 50rpx;
+		height: 350px;
+}
+.gaiimg{
+		width: 350px;
+		height: 350px;
+		margin-top: -350px;
+}
+

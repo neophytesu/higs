@@ -1,0 +1,16 @@
+
+.message-room {
+		padding: 25rpx;
+}
+.message-user {
+		padding: 0rpx 25rpx;
+}
+.btns {
+		display: flex;
+		flex-direction: row;
+		justify-content: 5rpx;
+		padding: 25rpx;
+}
+.btn {
+		padding: 5rpx;
+}

@@ -1,0 +1,223 @@
+page.data-v-8160f9bd {
+  line-height: 1.5;
+}
+iui-space.data-v-8160f9bd {
+  width: 100%;
+}
+iui-button.data-v-8160f9bd,
+iui-grid-item.data-v-8160f9bd,
+iui-cell.data-v-8160f9bd,
+iui-checkbox.data-v-8160f9bd,
+iui-radio.data-v-8160f9bd,
+iui-swiper.data-v-8160f9bd,
+iui-image.data-v-8160f9bd,
+iui-icon.data-v-8160f9bd {
+  display: contents;
+}
+iui-picker.data-v-8160f9bd .iui-popup-container-content {
+  background-color: var(--iui-mp-picker-title-bg) !important;
+}
+@media (prefers-color-scheme: dark) {
+picker-view-column.data-v-8160f9bd {
+    background-color: var(--iui-bg-secondary) !important;
+}
+}
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+view.data-v-8160f9bd,
+button.data-v-8160f9bd,
+text.data-v-8160f9bd,
+input.data-v-8160f9bd,
+textarea.data-v-8160f9bd {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fade-enter-active.data-v-8160f9bd,
+.fade-leave-active.data-v-8160f9bd {
+  transition: opacity 0.5s;
+}
+.fade-enter.data-v-8160f9bd,
+.fade-leave-to.data-v-8160f9bd {
+  opacity: 0;
+}
+
+/* 聊天消息 */
+.chat .topTabbar.data-v-8160f9bd {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  margin-top: 80rpx;
+  justify-content: space-between;
+}
+.chat .topTabbar .icon.data-v-8160f9bd {
+  margin-left: 20rpx;
+}
+.chat .topTabbar .text.data-v-8160f9bd {
+  margin: auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+.chat .topTabbar .button.data-v-8160f9bd {
+  width: 10%;
+  margin: auto 20rpx auto 0rpx;
+}
+.chat .scroll-view.data-v-8160f9bd {
+  background-color: #F6F6F6;
+}
+.chat .scroll-view.data-v-8160f9bd ::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+.chat .scroll-view .chat-body.data-v-8160f9bd {
+  display: flex;
+  flex-direction: column;
+  padding-top: 23rpx;
+  padding: 30rpx 30rpx 240rpx;
+}
+.chat .scroll-view .chat-body .self.data-v-8160f9bd {
+  justify-content: flex-end;
+}
+.chat .scroll-view .chat-body .item.data-v-8160f9bd {
+  display: flex;
+  padding: 23rpx 30rpx;
+}
+.chat .scroll-view .chat-body .item .right.data-v-8160f9bd {
+  background-color: #C2DCFF;
+}
+.chat .scroll-view .chat-body .item .left.data-v-8160f9bd {
+  background-color: #FFFFFF;
+}
+.chat .scroll-view .chat-body .item .right.data-v-8160f9bd::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 100%;
+  top: 10px;
+  border: 12rpx solid transparent;
+  border-left: 12rpx solid #C2DCFF;
+}
+.chat .scroll-view .chat-body .item .left.data-v-8160f9bd::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 10px;
+  right: 100%;
+  border: 12rpx solid transparent;
+  border-right: 12rpx solid #FFFFFF;
+}
+.chat .scroll-view .chat-body .item .content.data-v-8160f9bd {
+  position: relative;
+  max-width: 486rpx;
+  border-radius: 8rpx;
+  word-wrap: break-word;
+  padding: 24rpx 24rpx;
+  margin: 0 24rpx;
+  border-radius: 5px;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 42rpx;
+}
+.chat .scroll-view .chat-body .item .avatar.data-v-8160f9bd {
+  display: flex;
+  justify-content: center;
+  width: 78rpx;
+  height: 78rpx;
+  background: #4F7DF5;
+  border-radius: 50rpx;
+  overflow: hidden;
+}
+.chat .scroll-view .chat-body .item .avatar image.data-v-8160f9bd {
+  align-self: center;
+}
+.chat .link.data-v-8160f9bd {
+  font-style: italic;
+  text-decoration: underline;
+}
+.chat .tool.data-v-8160f9bd {
+  transition: all 0.1s ease;
+  position: fixed;
+  width: 100%;
+  height: 120rpx;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 20rpx 24rpx 20rpx 40rpx;
+  padding-bottom: calc(20rpx + constant(safe-area-inset-bottom) / 2) !important;
+  padding-bottom: calc(20rpx + env(safe-area-inset-bottom) / 2) !important;
+}
+.chat .tool .microphone.data-v-8160f9bd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70rpx;
+  margin-right: 10rpx;
+  width: 75rpx;
+  height: 75rpx;
+}
+.chat .tool .input.data-v-8160f9bd {
+  background: #eee;
+  border-radius: 10rpx;
+  height: 70rpx;
+  margin-right: 30rpx;
+  flex: 1;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.chat .tool .thumb.data-v-8160f9bd {
+  width: 64rpx;
+}
+.chat .tool .send-btn.data-v-8160f9bd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70rpx;
+  margin-left: 10rpx;
+  width: 150rpx;
+  height: 75rpx;
+  background: #113355;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 28rpx;
+}

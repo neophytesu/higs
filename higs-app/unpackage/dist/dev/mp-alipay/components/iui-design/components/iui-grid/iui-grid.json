@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "usingComponents": {
+    "iui-grid-row": "../iui-grid-row/iui-grid-row",
+    "iui-grid-item": "../iui-grid-item/iui-grid-item"
+  }
+}

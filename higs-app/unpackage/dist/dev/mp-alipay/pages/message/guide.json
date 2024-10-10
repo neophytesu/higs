@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "导诊",
+  "usingComponents": {
+    "iui-button": "../../components/iui-design/components/iui-button/iui-button"
+  }
+}

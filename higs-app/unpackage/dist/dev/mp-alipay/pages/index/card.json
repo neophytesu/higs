@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "主页",
+  "usingComponents": {
+    "iui-button": "../../components/iui-design/components/iui-button/iui-button",
+    "iui-card": "../../components/iui-design/components/iui-card/iui-card"
+  }
+}

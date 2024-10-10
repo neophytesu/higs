@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "挂号",
+  "usingComponents": {
+    "iui-tabs": "../../components/iui-design/components/iui-tabs/iui-tabs",
+    "iui-button": "../../components/iui-design/components/iui-button/iui-button",
+    "iui-card": "../../components/iui-design/components/iui-card/iui-card"
+  }
+}

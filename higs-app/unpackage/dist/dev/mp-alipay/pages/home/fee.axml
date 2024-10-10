@@ -1,0 +1,1 @@
+<iui-list a:for="{{a}}" a:for-item="item" a:key="d" u-s="{{['d']}}" class="fee" u-i="{{item.e}}" onVI="__l"><iui-cell u-s="{{['extra']}}" u-i="{{item.b}}" onVI="__l" u-p="{{item.c}}"><text slot="extra">{{item.a}}元</text></iui-cell></iui-list>

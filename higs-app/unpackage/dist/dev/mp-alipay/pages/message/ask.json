@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "预问诊",
+  "usingComponents": {
+    "iui-button": "../../components/iui-design/components/iui-button/iui-button",
+    "iui-popup": "../../components/iui-design/components/iui-popup/iui-popup"
+  }
+}

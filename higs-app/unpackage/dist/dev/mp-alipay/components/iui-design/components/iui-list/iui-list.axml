@@ -1,0 +1,1 @@
+<view class="{{('data-v-a68582be') + ' ' + d}}"><block a:if="{{a}}"><block a:for="{{b}}" a:for-item="cell" a:key="e"><slot a:if="{{c}}" name="{{cell.a}}"/><iui-cell a:else class="data-v-a68582be" u-i="{{cell.c}}" onVI="__l" u-p="{{cell.d||''}}"></iui-cell></block></block><slot/></view>

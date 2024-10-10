@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "",
+  "usingComponents": {
+    "iui-cell": "../../components/iui-design/components/iui-cell/iui-cell",
+    "iui-list": "../../components/iui-design/components/iui-list/iui-list"
+  }
+}

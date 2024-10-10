@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "挂号须知",
+  "usingComponents": {
+    "iui-checkbox": "../../components/iui-design/components/iui-checkbox/iui-checkbox",
+    "iui-button": "../../components/iui-design/components/iui-button/iui-button",
+    "iui-toast": "../../components/iui-design/components/iui-toast/iui-toast"
+  }
+}
